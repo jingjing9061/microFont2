@@ -20,13 +20,13 @@ new Vue({
 const app = [
     {
         name: 'sub-vue',// 必选，微应用的名称，微应用之间必须确保唯一。
-        entry: process.env.VUE_APP_SUB_VUE, // // 必选，微应用的 entry 地址。 默认会加载这个html 解析里面的js动态执行  注：子应用必须支持跨域'//localhost:10000'
+        entry:'http://localhost:10000', // // 必选，微应用的 entry 地址。 默认会加载这个html 解析里面的js动态执行  注：子应用必须支持跨域'
         activeRule: '/sub-vue',//激活规则 激活的路径
         container: '#subContainer',
     },
     {
         name: 'sub-react',
-        entry: process.env.VUE_APP_SUB_REACT,//'//localhost:20000'
+        entry:'http://localhost:20000',
         activeRule: '/sub-react',
         container: '#subContainer',
     },

@@ -2,10 +2,10 @@
     <div>
         <div id="nav">
             <!-- 主应用可以有自己的路由-->
-            <router-link to="/1">About</router-link>
+            <router-link class="link" to="/1">About</router-link>
             <!-- 可以引用其它子应用  -->
-            <router-link to="/sub-vue">vue应用</router-link>
-            <router-link to="/sub-react">react应用</router-link>
+            <router-link class="link" to="/sub-vue">vue应用</router-link>
+            <router-link class="link" to="/sub-react">react应用</router-link>
         </div>
         <div id="subContainer"></div>
         <router-view />
@@ -34,5 +34,8 @@
 
 #nav a.router-link-exact-active {
     color: #42b983;
+}
+.link {
+    margin-left: 10px;
 }
 </style>
