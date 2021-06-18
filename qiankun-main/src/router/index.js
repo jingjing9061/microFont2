@@ -4,7 +4,6 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-
 const routes = [
   {
     path: '/',
@@ -12,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/about/*',
+    path: '/about',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -23,7 +22,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: '/qiankun-projecta',
+  base: process.env.BASE_URL,
   routes
 })
 
